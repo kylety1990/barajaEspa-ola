@@ -1,6 +1,6 @@
 // Creemos recrear una app para, que te cree una baraja de cartas!
 
-function createLetterDefault() {
+function defaultDeck() {
     let arr = [];
 
     for (i = 1; i <= 13; i++) {
@@ -57,7 +57,7 @@ function customizedDeck(arrRemove) {
 // let basura = [1, 8, [3, 5]];
 // console.log(basura.indexOf(3));
 
-let dato = createLetterDefault().indexOf("J-O");
+let dato = defaultDeck().indexOf("J-O");
 
 console.log(dato);
 
