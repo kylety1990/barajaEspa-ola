@@ -33,23 +33,27 @@ function defaultDeck() {
 }
 
 function customizedDeck(arrRemove) {
-    let arrO = [];
-    let arrE = [];
-    let arrB = [];
-    let arrC = [];
+    let array = defaultDeck();
 
     for (i = 0; i < arrRemove.length; i++) {
-        console.log(arrRemove[i]);
-
-
-
+        console.log(array.indexOf(arrRemove[i]));
+        array.splice(array.indexOf(arrRemove[i]), 1);
 
 
     }
-    return arrRemove;
+    return array;
 }
 
-// let toma = [8, 9]
+
+let arrRemove = ["8-E", "9-B"];
+let custom = customizedDeck(arrRemove);
+console.log(custom);
+
+// for (i = 0; i < arrRemove.length; i++) {
+//     array.splice(array.indexOf(arrRemove[i]), 1)
+//     console.log(array.indexOf(arrRemove[i]));
+// }
+// let toma = ["8-E", "9-B"]
 // let datos = customizedDeck(toma);
 
 // console.log(datos);
@@ -57,9 +61,9 @@ function customizedDeck(arrRemove) {
 // let basura = [1, 8, [3, 5]];
 // console.log(basura.indexOf(3));
 
-let dato = defaultDeck().indexOf("J-O");
+// let dato = defaultDeck().indexOf("J-O");
 
-console.log(dato);
+// console.log(dato);
 
 // for (i = 0; i < oros.length; i++) {
 
